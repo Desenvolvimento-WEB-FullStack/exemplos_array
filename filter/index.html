@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplos</title>
+
+    <style>
+      .form_container {
+        width: 50%;
+        margin: 40px auto;
+        padding: 10px;
+        min-height: 80px;
+        background-color: #e9634c;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      input {
+        height: 34px;
+        border-radius: 8px;
+        width: 100%;
+      }
+
+      .email_container {
+        background-color: #d5d0d0;
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form id="form_pesquisa" class="form_container">
+      <input placeholder="Pesquise por uma palavra" id="palavra" required />
+    </form>
+
+    <ul id="lista"></ul>
+
+    <script src="index.js"></script>
+  </body>
+</html>
