@@ -132,8 +132,8 @@ var pastas = [
 document.getElementById("form_pesquisa").addEventListener("submit", (event) => {
   event.preventDefault();
 
-  var codigoDigitado = Number(document.getElementById("codigo").value);
-  var petEncontrado = pets.find((pet) => pet.id === codigoDigitado);
+  const codigoDigitado = Number(document.getElementById("codigo").value);
+  const petEncontrado = pets.find((pet) => pet.id === codigoDigitado);
   console.log(petEncontrado);
 
   if (petEncontrado) {

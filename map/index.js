@@ -1,4 +1,4 @@
-var resumo = [
+const resumo = [
   {
     id: 1,
     nome: "Action Figure Mago",
@@ -40,7 +40,7 @@ var resumo = [
   },
 ];
 
-var novoResumo = resumo.map((item) => {
+const novoResumo = resumo.map((item) => {
   item.subTotal = item.preco * item.quantidade;
   // item.nome = item.id + " - " + item.nome;
   return item;
@@ -50,7 +50,7 @@ var novoResumo = resumo.map((item) => {
 console.log(novoResumo);
 
 novoResumo.forEach((item) => {
-  var blocoHTML = `
+  const blocoHTML = `
     <tr>
         <td>
             <img
@@ -75,17 +75,17 @@ novoResumo.forEach((item) => {
 // Terceira  vez - ACC =  1052.97, item 2
 // Quarta   vez - ACC =  1052.97, item 2
 
-var total = novoResumo.reduce((acc, item) => {
+const total = novoResumo.reduce((acc, item) => {
   return acc + item.subTotal;
 }, 0);
 
 document.getElementById("total").innerText = total;
 
-var qtdItems = novoResumo.reduce((acc, item) => {
+const qtdItems = novoResumo.reduce((acc, item) => {
   return acc + item.quantidade;
 }, 0);
 
-var descricaoGeral = novoResumo.reduce((acc, item) => {
+const descricaoGeral = novoResumo.reduce((acc, item) => {
   return acc + "-" + item.nome;
 }, "");
 
